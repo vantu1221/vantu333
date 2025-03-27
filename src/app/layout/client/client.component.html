@@ -1,0 +1,38 @@
+<div>
+  <nav class="bg-blue-400 p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <div class="text-white text-lg font-bold">Logo</div>
+          <ul class="flex space-x-6">
+              <li><a [routerLink]="''" class="text-white hover:text-gray-300 ">Trang chủ</a></li>
+              <li><a [routerLink]="'product'" class="text-white hover:text-gray-300">Sản phẩm</a></li>
+              <li><a [routerLink]="'about'" class="text-white hover:text-gray-300">About</a></li>
+          </ul>
+        </div>
+        <div class="space-x-4">
+            <button class="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-gray-100">Đăng ký</button>
+            <button class="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-gray-300">Đăng nhập</button>
+        </div>
+    </div>
+</nav>
+</div>
+
+<div class="container mx-auto">
+  <router-outlet/>
+</div>
+
+<div>
+  <footer class="bg-blue-600 text-white py-6 mt-10 shadow-inner">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+      <div class="mb-4 md:mb-0">
+        <h2 class="text-lg font-semibold">Cao đẳng fptpoly</h2>
+        <p class="text-sm opacity-80">Nguyễn Văn Tú</p>
+      </div>
+  
+      <div class="text-sm opacity-80">
+        © 2025 Nguyễn Văn Tú. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
+</div>
